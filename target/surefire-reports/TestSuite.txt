@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 373.903 sec <<< FAILURE! - in TestSuite
+testMainHeader(scripts._03_EtsyTest)  Time elapsed: 2.702 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Shop Home Sales!] but found [Father's Day Gifts]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:97)
+
+textExpediaDropdowns(scripts._07_DropdownTest)  Time elapsed: 82.391 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#preferred\-class\-input\-trigger"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Atillas-MacBook-Pro.local', ip: '2607:9880:2d77:ff89:0:0:0:19%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2.1', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/0t/0rxm323x72d...}, goog:chromeOptions: {debuggerAddress: localhost:52412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: de7981129726297964ceb19a3d7d4951
+*** Element info: {Using=id, value=preferred-class-input-trigger}
+	at scripts._07_DropdownTest.textExpediaDropdowns(_07_DropdownTest.java:80)
+
+testEtsySignInModal(scripts._08_Alerts)  Time elapsed: 4.886 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Sign in] but found [Sign in to continue]
+	at scripts._08_Alerts.testEtsySignInModal(_08_Alerts.java:25)
+
+testAmazonAddressModal(scripts._08_Alerts)  Time elapsed: 10.624 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:152)
+
+testFileDownLoad(scripts._11_FileUpload)  Time elapsed: 16.026 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"myFileOzden2.xls"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Atillas-MacBook-Pro.local', ip: '2607:9880:2d77:ff89:0:0:0:19%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2.1', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/0t/0rxm323x72d...}, goog:chromeOptions: {debuggerAddress: localhost:54077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 931b69286ec2c77078b1c38d7b522082
+*** Element info: {Using=link text, value=myFileOzden2.xls}
+	at scripts._11_FileUpload.testFileDownLoad(_11_FileUpload.java:33)
+
